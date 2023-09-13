@@ -21,16 +21,15 @@ public class Ruin {
 		
 		
 		
-		while (startAmount >=1&& startAmount<=winLimit){
+		while (startAmount >=1&& startAmount<winLimit){
 			int number = (int)(Math.random()*(100-1+1)+1);
 			if (number <= winChance) {
 				startAmount++;
-				System.out.println(startAmount);
 			}
 				
 			else {
 				startAmount--;
-				System.out.println(startAmount );
+				
 			}
 		}
 		if (startAmount>=1)
